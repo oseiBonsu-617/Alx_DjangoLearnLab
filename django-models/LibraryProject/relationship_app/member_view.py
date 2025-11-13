@@ -7,5 +7,5 @@ def is_member(user):
 
 
 @user_passes_test(is_member)
-def member_dashboard(request):
-    return render(request, 'users/member_view.html', {'role': 'Member'})
+def member_view(request):
+    return render(request, 'relationship_app/member_view.html', {'role': 'Member'})
